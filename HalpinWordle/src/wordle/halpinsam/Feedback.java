@@ -11,7 +11,11 @@ public class Feedback {
 			tiles[i] = new Tile(letter);
 		}
 	}
-
+/**
+ * Sets the feedback of the players guess
+ * @param guess
+ * @param answer
+ */
 	public void setFeedback(String guess, String answer ) {
 		// modify the tiles... state... 
 		for (int i=0; i<answer.length(); i++) {
@@ -26,7 +30,11 @@ public class Feedback {
 			}
 		}
 	}
-	
+	/**
+	 * Gets the tiles state of a certain index
+	 * @param i
+	 * @return returns the state of the tile
+	 */
 	public TileState getState(int i) {
 		return tiles[i].getState();
 	}
